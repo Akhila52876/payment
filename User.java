@@ -16,6 +16,7 @@ public class User {
 		this.phonenumber = phonenumber;
 		this.address = address;
 	}
+	
 	public String getUsername() {
 		return username;
 	}
@@ -52,9 +53,13 @@ public class User {
 	public void setAddress(String address) {
 		this.address = address;
 	}
+	
      
-     
-    
+	@Override
+	public String toString() {
+		return "User [username=" + username + ", firstname=" + firstname + ", lastname=" + lastname + ", email=" + email
+				+ ", phonenumber=" + phonenumber + ", address=" + address + "]";
+	}
      
      
 }
